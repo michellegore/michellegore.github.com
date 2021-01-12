@@ -1,0 +1,17 @@
+#banner {
+    width: 800px;
+    height: 250px;
+    background-color: beige;
+}
+
+.flex-container {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
