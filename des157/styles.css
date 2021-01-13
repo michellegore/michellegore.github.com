@@ -45,8 +45,7 @@ span {
     margin-top: 30px;
     width: 800px;
     height: 250px;
-    background-color: #0E3955;
-    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -76,7 +75,6 @@ ul {
 
 li {
     margin-left: -20px;
-    color: #84DCDE;
 }
 
 footer {
@@ -85,13 +83,16 @@ footer {
 }
 
 /* Links */
+a {
+    text-decoration: none;
+}
 
 a:link {
     color: #84DCDE;
 }
 
 a:visited {
-    color: #A0E66D;
+    color: #84DCDE;
 }
 
 a:hover {
@@ -104,7 +105,7 @@ a:hover {
     width: 180px;
     height: 180px;
     background-color: #AFD157;
-    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin: auto;
 }
@@ -119,7 +120,7 @@ a:hover {
     width: 180px;
     height: 180px;
     background-color: #FFC5AB;
-    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin: auto;
 }
@@ -134,7 +135,7 @@ a:hover {
     width: 180px;
     height: 180px;
     background-color: #FFC53D;
-    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin: auto;
 }
