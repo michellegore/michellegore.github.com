@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp 1</title>
+    <style>
+        .purple{color:purple;}
+        .orange{color:orange;}
+        .green{color:green;}
+        .brown{color:brown;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Color Mixing Quiz</h1>
+        <p>Test how well you know how to mix colors!</p>
+        <p id="makePurple">Purple</p>
+        <p id="makeOrange">Orange</p>
+        <p id="makeGreen">Green</p>
+        <p id="makeBrown">Brown</p>
+        <button onclick="colorMixing()">Let's Play!</button>
+
+    </main>
+
+    <script>
+        /* This program quizzes the user's knowledge on color mixing by asking which colors make up specific colors and prints the results on the page. */
+
+        function colorMixing(){
+            makePurple();
+            makeOrange();
+            makeGreen();
+            makeBrown();
+        }
+        
+        function makePurple(){
+            var userColor = prompt("What two colors make purple?", "color + color");
+            if(userColor == "red + blue" || userColor == "blue + red"){
+                alert("Correct!");
+                var correct = document.createTextNode(': correct!');
+                document.getElementById("makePurple").appendChild(correct);
+            }
+            else{
+                alert("Inorrect :(");
+                var incorrect = document.createTextNode(': incorrect!');
+                document.getElementById("makePurple").appendChild(incorrect);
+            }
+        }
+
+        function makeOrange(){
+            var userColor = prompt("What two colors make orange?", "color + color");
+            if(userColor == "red + yellow" || userColor == "yellow + red"){
+                alert("Correct!");
+                var correct = document.createTextNode(': correct!');
+                document.getElementById("makeOrange").appendChild(correct);
+            }
+            else{
+                alert("Inorrect :(");
+                var incorrect = document.createTextNode(': incorrect!');
+                document.getElementById("makeOrange").appendChild(incorrect);
+            }
+        }
+
+        function makeGreen(){
+            var userColor = prompt("What two colors make green?", "color + color");
+            if(userColor == "yellow + blue" || userColor == "blue + yellow"){
+                alert("Correct!");
+                var correct = document.createTextNode(': correct!');
+                document.getElementById("makeGreen").appendChild(correct);
+            }
+            else{
+                alert("Inorrect :(");
+                var incorrect = document.createTextNode(': incorrect!');
+                document.getElementById("makeGreen").appendChild(incorrect);
+            }
+        }
+
+        function makeBrown(){
+            var userColor = prompt("What three colors make brown?", "color + color + color");
+            if(userColor == "red + yellow + blue" || userColor == "red + blue + yellow" || userColor == "blue + red + yellow" || userColor == "blue + yellow + red" || userColor == "yellow + red + blue" || userColor == "yellow + blue + red"){
+                alert("Correct!");
+                var correct = document.createTextNode(': correct!');
+                document.getElementById("makeBrown").appendChild(correct);
+            }
+            else{
+                alert("Inorrect :(");
+                var incorrect = document.createTextNode(': incorrect!');
+                document.getElementById("makeBrown").appendChild(incorrect);
+            }
+        }
+
+        document.getElementById("makePurple").style.color = "purple"
+        document.getElementById("makeOrange").style.color = "orange"
+        document.getElementById("makeGreen").style.color = "green"
+        document.getElementById("makeBrown").style.color = "brown"
+
+    </script>
+</body>
+</html>
