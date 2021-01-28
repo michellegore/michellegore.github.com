@@ -1,0 +1,15 @@
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div {
+    border-radius: 20px;
+    background-color: rgb(240, 237, 234);
+    padding: 50px;
+}
