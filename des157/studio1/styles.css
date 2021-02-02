@@ -1,15 +1,227 @@
+body {
+    background-color: #88CA69;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 12px;
+    color: white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: #335E21;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4f4f4f;
+}
+
+header {
+    margin-top: 7%;
+    margin-left: 10%;
+    float: left;
+}
+
+.text {
+    position: relative;
+}
+
+footer {
+  position: absolute;
+  margin-left: 10%;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  bottom: 2.5%;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #335E21;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Form */
+
+.form {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 4%;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    float: right;
+    width: 40%;
+}
+
+#myform {
+    margin-left: 28%;
+    overflow: hidden;
+}
+
 input[type=text] {
-    width: 100%;
+    width: 240px;
     padding: 6px 10px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: list-item;
+    background: #F8F8F8;
+    border: 1px solid #D2D2D2;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-div {
-    border-radius: 20px;
-    background-color: rgb(240, 237, 234);
-    padding: 50px;
+input[type=submit] {
+    width: 240px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #88CA69;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: none;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+input[type=submit]:hover {
+    background-color: #76B659;
+}
+
+input[type=reset] {
+	background: none;
+	color: inherit;
+	border: none;
+    padding: 0;
+    outline: inherit;
+    margin-top: 32px;
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    color: #88CA69;
+}
+
+input[type=reset]:hover {
+    color: #4f4f4f;
+}
+
+/* Output */
+.output {
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.error {
+    color: #4f4f4f;
+    text-align: center;
+}
+
+/* Images */
+
+#dog {
+    position: absolute;
+    left: 210px;
+    z-index: -1;
+    animation: dog 5s infinite ease-in-out;
+}
+
+@keyframes dog {
+    0% {top: 318px;}
+    50% {top: 278px;}
+    100% {top: 318px;}
+}
+
+#city {
+    position: absolute;
+    left: 145px;
+    top: 115px;
+    z-index: -2;
+}
+
+#cloud1 {
+    position: absolute;
+    top: 250px;
+    z-index: -1;
+    animation: cloud1 5s infinite ease-in-out;
+}
+
+@keyframes cloud1 {
+    0% {left: 510px;}
+    50% {left: 480px;}
+    100% {left: 510px;}
+}
+
+#cloud2 {
+    position: absolute;
+    top: 290px;
+    z-index: -1;
+    animation: cloud2 5s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes cloud2 {
+    0% {left: 310px;}
+    50% {left: 290px;}
+    100% {left: 310px;}
+}
+
+#cloud3 {
+    position: absolute;
+    top: 225px;
+    z-index: -1;
+    animation: cloud3 5s infinite ease-in-out;
+    animation-delay: 0.7s;
+}
+
+@keyframes cloud3 {
+    0% {left: 135px;}
+    50% {left: 105px;}
+    100% {left: 135px;}
+}
+
+#shadow {
+    position: absolute;
+    left: 245px;
+    top: 680px;
+    z-index: -2;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0% {width: 10%;}
+    50% {width: 15%;}
+    100% {width: 10%;}
+}
+
+#background {
+    position: absolute;
+    right: 0;
+    width: 100;
+    height: 100%;
+    z-index: -3;
 }

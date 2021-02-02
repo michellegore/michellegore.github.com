@@ -4,39 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Lib</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h3>HEADER</h3>
-        <h1>Mad Libs</h1>
-        <h4>Mad Lib description</h4>
-    </header>
-    <main>
-        <div>
-            <form id="myform">
-                <label for="noun1">Provide a noun</label>
-                <input type="text" id="noun1">
-    
-                <label for="noun2">Provide another noun</label>
-                <input type="text" id="noun2">
-    
-                <label for="adjective">Provide an adjective</label>
-                <input type="text" id="adjective">
-    
-                <label for="verb">Provide a verb</label>
-                <input type="text" id="verb">
-    
-                <input type="reset">
-    
-                <input type="submit" value="Send">
-            </form>
-            <article id="madlib"></article>
+        <div class="text">
+            <h2>MAD LIBS</h3>
+            <h1>Let's Go For a Walk!</h1>
         </div>
         
+        <img id=dog src="images/Dog.svg" alt="Dog">
+        <img id=cloud1 src="images/Cloud 1.svg" alt="Cloud 1">
+        <img id=cloud2 src="images/Cloud 2.svg" alt="Cloud 2">
+        <img id=cloud3 src="images/Cloud 3.svg" alt="Cloud 3">
+        <img id=city src="images/City.svg" alt="City">
+        <img id=shadow src="images/Shadow.svg" alt="Shadow">
+        
+    </header>
+    <main>
+        <div class="form">
+            <form id="myform">
+                <label for="noun1">Proper noun (name)</label>
+                <input type="text" id="noun1" required>
+    
+                <label for="noun2">Proper noun (location)</label>
+                <input type="text" id="noun2" required>
+
+                <label for="verb1">Verb ending in -ing</label>
+                <input type="text" id="verb1" required>
+
+                <label for="adverb1">Adverb ending in -ly</label>
+                <input type="text" id="adverb1" required>
+
+                <label for="bodypart">Body part</label>
+                <input type="text" id="bodypart" required>
+
+                <label for="adverb2">Adverb ending in -ly</label>
+                <input type="text" id="adverb2" required>
+    
+                <input type="submit" value="SUBMIT">
+                
+                <br>
+                <label id="reset" for="reset">Changed your mind?</label>
+                <input id="reset" type="reset" value="Start over.">
+
+            </form>
+
+            <article id="madlib"></article>
+
+        </div>
+
+        <img id="background" src="images/Background.svg" alt="Background">
+
+        <footer>
+            <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+            <span>|</span>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </footer>
+        
     </main>
-    <footer>
-    </footer>
+    
 </body>
 </html>
