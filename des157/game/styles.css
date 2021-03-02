@@ -1,0 +1,155 @@
+body {
+    font-family: Proxima Nova;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+    background: #FAFAFA;
+    margin-left: 100px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFC978;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #464646;
+    padding-top: 10px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 58px;
+    color: #F4A682;
+    padding-left: 20px;
+    display: inline;
+    padding-top: 80px;
+    text-align: left;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 58px;
+    color: #49B236;
+    padding-right: 20px;
+    display: inline;
+    padding-top: 80px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+}
+
+button { 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 32px;
+    padding-left: 32px;
+    background: #FFC978;
+    border-radius: 5px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF; 
+}
+
+#column1 {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 4%;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    float: left;
+    width: 25%;
+}
+
+#column2 {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 4%;
+    float: left;
+    width: 50%;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    height: 160px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+#game {
+    background: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+    height: 300px;
+    text-align: center;
+    display: inline;
+    float: left;
+    width: 340px;
+}
+
+#actions {
+    background: #F2F2F2;
+    border-radius: 0px 20px 20px 0px;
+    height: 300px;
+    text-align: center;
+    display: inline;
+    float: left;
+    width: 200px;
+}
+
+#score {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    height: 260px;
+    margin-top: 370px;
+    text-align: center;
+    padding-left: 50px;
+}
+
+#roll {
+    margin-top: 50px;
+}
+
+#rollagain {
+    margin-top: 50px;
+}
+
+#froggy {
+    float: left;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+#bunny {
+    float: left;
+    margin-right: 80px;
+}
+
