@@ -18,11 +18,24 @@ h2 {
     color: #335E21;
 }
 
-label {
-    font-weight: 600;
+h3 {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
     font-size: 16px;
-    line-height: 16px;
-    color: #4f4f4f;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+label {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
 }
 
 header {
@@ -59,18 +72,20 @@ a:hover {
 /* Form */
 
 .form {
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 4%;
-    margin-right: 8%;
+    margin-top: 15%;
+    margin-right: 15%;
     margin-bottom: 5%;
     float: right;
     width: 40%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
 }
 
 #myform {
