@@ -1,0 +1,298 @@
+body {
+    background-color: #88CA69;
+    color: #335E21;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    cursor: url(images/cursor.svg), auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 12px;
+    color: white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: #335E21;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+b {
+    color: #0E2304; 
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #335E21;
+}
+
+header {
+    margin-top: 7%;
+    margin-left: 10%;
+    float: left;
+}
+
+.text {
+    position: relative;
+}
+
+footer {
+  position: absolute;
+  margin-left: 80%;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  bottom: 2.5%;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #335E21;
+}
+
+a:hover {
+    color: white;
+}
+
+/* -------------------------- Form -------------------------- */
+
+.form {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 7%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    float: right;
+    width: 45%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+}
+
+#myform {
+    margin-left: 30%;
+    overflow: hidden;
+}
+
+input[type=button] {
+    width: 288px;
+    height: 219px;
+    background-color: transparent;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 20px;
+}
+
+input[type=text] {
+    width: 240px;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: list-item;
+    background: #F8F8F8;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 240px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #619C46;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: none;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+input[type=submit]:hover {
+    background-color: #88CA69;
+}
+
+#reload {
+    width: 240px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #619C46;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: none;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.1em;
+    margin-left: 28%;
+}
+
+button:hover {
+    background-color: #88CA69;
+}
+
+#surprise {
+    margin-top: 550px;
+    width: 240px;
+    padding: 12px;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: 1px solid white;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #88CA69;
+    letter-spacing: 0.1em;
+    margin-left: 18%;
+}
+
+#surprise:hover {
+    background-color:#619C46;
+    border: none;
+}
+
+/* -------------------------- Output -------------------------- */
+
+.output {
+    font-size: 22px;
+    line-height: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.error {
+    color: #4f4f4f;
+    text-align: center;
+}
+
+/* -------------------------- Images -------------------------- */
+
+#dog {
+    position: absolute;
+    left: 210px;
+    z-index: -1;
+    animation: dog 5s infinite ease-in-out;
+}
+
+@keyframes dog {
+    0% {top: 318px;}
+    50% {top: 278px;}
+    100% {top: 318px;}
+}
+
+#dogflip {
+    position: absolute;
+    left: 210px;
+    z-index: -1;
+    top: 318px;
+    animation: dogflip 2s ease-in-out;
+}
+
+@keyframes dogflip {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#city {
+    position: absolute;
+    left: 145px;
+    top: 115px;
+    z-index: -2;
+}
+
+#cloud1 {
+    position: absolute;
+    top: 250px;
+    z-index: -1;
+    animation: cloud1 5s infinite ease-in-out;
+}
+
+@keyframes cloud1 {
+    0% {left: 510px;}
+    50% {left: 480px;}
+    100% {left: 510px;}
+}
+
+#cloud2 {
+    position: absolute;
+    top: 290px;
+    z-index: -1;
+    animation: cloud2 5s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+@keyframes cloud2 {
+    0% {left: 310px;}
+    50% {left: 290px;}
+    100% {left: 310px;}
+}
+
+#cloud3 {
+    position: absolute;
+    top: 225px;
+    z-index: -1;
+    animation: cloud3 5s infinite ease-in-out;
+    animation-delay: 0.7s;
+}
+
+@keyframes cloud3 {
+    0% {left: 135px;}
+    50% {left: 105px;}
+    100% {left: 135px;}
+}
+
+#shadow {
+    position: absolute;
+    left: 245px;
+    top: 680px;
+    z-index: -2;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0% {width: 10%;}
+    50% {width: 15%;}
+    100% {width: 10%;}
+}
+
+#background {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: -3;
+}

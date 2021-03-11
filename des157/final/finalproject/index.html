@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <h2>MAD LIBS</h2>
+            <h1>Let's Go For a Walk!</h1>
+        </div>
+        
+        <img id=dog src="images/Dog.svg" alt="Dog">
+        <img id=cloud1 src="images/Cloud1.svg" alt="Cloud 1">
+        <img id=cloud2 src="images/Cloud2.svg" alt="Cloud 2">
+        <img id=cloud3 src="images/Cloud3.svg" alt="Cloud 3">
+        <img id=city src="images/City.svg" alt="City">
+        <img id=shadow src="images/Shadow.svg" alt="Shadow">
+        
+        <button id="surprise">SURPRISE</button>
+        
+    </header>
+    <main>
+        <div class="form">
+            <form id="myform">
+                <label for="noun1">Proper noun (name)</label>
+                <input type="text" id="noun1" required>
+
+    
+                <label for="noun2">Proper noun (location)</label>
+                <input type="text" id="noun2" required>
+
+                <label for="verb1">Verb ending in -ing</label>
+                <input type="text" id="verb1" required>
+
+                <label for="adverb1">Adverb ending in -ly</label>
+                <input type="text" id="adverb1" required>
+
+                <label for="bodypart">Body part</label>
+                <input type="text" id="bodypart" required>
+
+                <label for="adverb2">Adverb ending in -ly</label>
+                <input type="text" id="adverb2" required>
+ 
+                <input type="submit" value="SUBMIT">
+
+            </form>
+
+            <article id="madlib"></article>
+
+        </div>
+
+        <img id="background" src="images/Background.svg" alt="Background">
+
+        <footer>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmichellegore.github.io%2Fdes157%2Fstudio1%2Fmadlibs">Valid HTML 5</a>
+            <span>|</span>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmichellegore.github.io%2Fdes157%2Fstudio1%2Fmadlibs&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+        </footer>
+        
+    </main>
+    
+</body>
+</html>
